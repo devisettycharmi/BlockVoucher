@@ -1,0 +1,21 @@
+{
+  "name": "blockvoucher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blockchain-based coupon and voucher verification system",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "compile": "hardhat compile",
+    "test:contract": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "seed:admin": "node backend/scripts/seed-admin.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.18"
+  }
+}

@@ -1,0 +1,4 @@
+.coupon-qr{display:flex;flex-direction:column;align-items:center;gap:6px}
+.coupon-qr-preview{width:76px;height:76px;padding:4px;background:#fff;border-radius:7px;object-fit:contain}
+.verify-help{margin:8px 0 0;color:#9295a5;font-size:11px;line-height:1.55}
+@media(max-width:650px){.coupon-qr{width:100%;flex-direction:row;justify-content:flex-end}.coupon-qr-preview{width:66px;height:66px}}

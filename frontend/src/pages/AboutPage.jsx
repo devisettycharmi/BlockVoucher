@@ -1,0 +1,6 @@
+import React from "react";
+import SiteLayout from "../layouts/SiteLayout";
+
+export default function AboutPage() {
+  return <SiteLayout><section className="content-page container"><span className="eyebrow">TRANSPARENCY, BY DESIGN</span><h1>A better foundation<br /><span>for every offer.</span></h1><p className="content-lead">BlockVoucher uses smart contracts to make coupon issuance and redemption verifiable, durable, and fair.</p><div className="feature-grid"><article className="feature-card"><h3>What is blockchain?</h3><p>A shared ledger maintained across a network. Once confirmed, records are difficult to alter without detection.</p></article><article className="feature-card"><h3>What is a smart contract?</h3><p>Programmed rules that run on-chain. Our contract validates coupon expiry, merchant authorization, and redemption limits.</p></article><article className="feature-card"><h3>Why QR verification?</h3><p>QR codes provide a quick way to identify a coupon. Its ID is verified against the contract—not trusted just because it was scanned.</p></article></div><div className="chain-diagram"><span>Admin issues</span><b>→</b><span>Ethereum contract</span><b>→</b><span>Merchant verifies</span><b>→</b><span>One redemption</span></div></section></SiteLayout>;
+}
